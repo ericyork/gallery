@@ -48,23 +48,21 @@ a {
 	font-size: 18px; /*-- sets hero paragraph font size for small screens --*/
 }
 
-/*-- BxSlider Style Overrides --*/
-ul.bxslider {
+/*-- BxSlider Style Corrections --*/
+ul.bxslider { /*-- corrects image position --*/
 	margin-left: -35px;
 }
-.bx-caption {
+.bx-caption { /*-- corrects caption position --*/
 	margin-bottom: 15px;
 	margin-left: 0px;
 	margin-right: 0px;
 }
 
 /*-- Navigation Panel Styles --*/
-#main-navigation:target {
-	/* Opens Navigation */
+#main-navigation:target {/*-- sets width of nav panel when opened --*/
   width: 25%;
 }
-.navigation {
-	/* Collapsed by default*/
+.navigation {/*-- Sets properties of nav panel (closed by default) --*/
   width: 0;
   overflow: hidden;
   position: fixed;
@@ -76,49 +74,49 @@ ul.bxslider {
 	z-index: 10000;
 	box-shadow:inset 0px 0px 0px 10px #999;
 }
-.navigation h2 {
+.navigation h2 {/*-- positions the nav h2 element --*/
 	padding-top: 2rem;
 	padding-left: 2rem;
 	padding-bottom: 1rem;
 }
-.navigation ul {
+.navigation ul { /*-- removes bullets from list items --*/
 	list-style-type: none;
 }
-.navigation li a {
+.navigation li a { /*-- sets anchors to block and pads them --*/
 	display: block;
 	padding: 1rem;
 }
-.navigation li a:hover {
+.navigation li a:hover { /*-- sets anchor properties on hover --*/
 	background-color: #555;
 	color: #fff;
 }
-.icon-wrap {
-	position: absolute;
+.icon-wrap { /*-- sets icon container position --*/
+	position: fixed;
+	z-index: 9999;
 	top: 1rem;
 	right: 2rem;
 }
-span.hamburger {
+span.hamburger { /*-- sets nav icon apperance --*/
+	background: rgba(255,255,255,0.8);
+	border: 2px solid #555;
+	border-radius: 8px;
 	color: #555;
 	font-size: 3rem;
 }
-span:hover.hamburger {
+span:hover.hamburger { /*-- sets nav icon color on hover --*/
+	background: rgba(255,255,255,1);
 	color: #999;
+	border-color: #999;
 }
-span.x-mark {
+span.x-mark { /*-- sets close icon apperance and position --*/
 	color: #555;
 	font-size: 3em;
 	position: absolute;
 	top: 1rem;
 	right: 2rem;
 }
-span:hover.x-mark {
+span:hover.x-mark { /*-- sets close icon color on hover --*/
 	color: #999;
-}
-.page-wrap {
-	/* Open by default */
-	width: 100%;
-  float: left;
-	transition: width .4s ease;
 }
 
 /*-- Footer Styles --*/
