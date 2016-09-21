@@ -2,9 +2,9 @@ $(document).ready(function(){
 	$('.bxslider').bxSlider({
 	  mode: 'fade',
 	  captions: true,
-	  auto: false,
-	  autoControls: true,
-	  pause: 2000
+	  auto: true,
+	  autoControls: false,
+	  pause: 5000
 	});
 });
 

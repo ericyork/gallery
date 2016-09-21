@@ -8,11 +8,11 @@ body {
 	width: 90%; /*-- supplies 5% margin on either side --*/
 	margin: 0 auto; /*-- sets top margin to 0 and left and right to auto --*/
 }
+.panel {
+	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
+}
 div, footer {
 	margin: 0 -2px; /*-- corrects spacing bug --*/
-}
-* {/*-- selects every element on the page and sets them to use the border-box sizing model --*/
-	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
 }
 h1, h2, h3, h4, h5, h6, p { /*-- zeros the margin and paddings on all text elements --*/
 	margin: 0;
@@ -41,6 +41,17 @@ h1, h2, h3, h4, h5, h6, p { /*-- zeros the margin and paddings on all text eleme
 .hero p {
 	font-size: 18px; /*-- sets hero paragraph font size for small screens --*/
 }
+
+/*-- BxSlider Style Overrides --*/
+ul.bxslider {
+	margin-left: -35px;
+}
+.bx-caption {
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 /*-- Footer Styles --*/
 footer p {
 	text-align: center;
