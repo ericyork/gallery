@@ -8,15 +8,21 @@ body {
 	width: 90%; /*-- supplies 5% margin on either side --*/
 	margin: 0 auto; /*-- sets top margin to 0 and left and right to auto --*/
 }
+html {
+	font-size: 17px;
+}
 .panel {
 	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
 }
-div, footer {
-	margin: 0 -2px; /*-- corrects spacing bug --*/
+.panel, footer {
+	margin: 0 -3px; /*-- corrects spacing bug --*/
 }
 h1, h2, h3, h4, h5, h6, p { /*-- zeros the margin and paddings on all text elements --*/
 	margin: 0;
 	padding: 0;
+}
+a {
+	text-decoration: none;
 }
 
 /*-- Panel Styles --*/
@@ -50,6 +56,69 @@ ul.bxslider {
 	margin-bottom: 15px;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+/*-- Navigation Panel Styles --*/
+#main-navigation:target {
+	/* Opens Navigation */
+  width: 25%;
+}
+.navigation {
+	/* Collapsed by default*/
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 35%;
+	transition: width .4s ease;
+	background-color: #FFF;
+	z-index: 10000;
+	box-shadow:inset 0px 0px 0px 10px #999;
+}
+.navigation h2 {
+	padding-top: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 1rem;
+}
+.navigation ul {
+	list-style-type: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+}
+.navigation li a:hover {
+	background-color: #555;
+	color: #fff;
+}
+.icon-wrap {
+	position: absolute;
+	top: 0;
+	right: 2rem;
+}
+span.hamburger {
+	color: #555;
+	font-size: 3rem;
+}
+span:hover.hamburger {
+	color: #999;
+}
+span.x-mark {
+	color: #555;
+	font-size: 3em;
+	position: absolute;
+	top: 0;
+	right: 2rem;
+}
+span:hover.x-mark {
+	color: #073642;
+}
+.page-wrap {
+	/* Open by default */
+	width: 100%;
+  float: left;
+	transition: width .4s ease;
 }
 
 /*-- Footer Styles --*/
