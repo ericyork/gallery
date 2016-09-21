@@ -94,7 +94,7 @@ ul.bxslider {
 }
 .icon-wrap {
 	position: absolute;
-	top: 0;
+	top: 1rem;
 	right: 2rem;
 }
 span.hamburger {
@@ -108,11 +108,11 @@ span.x-mark {
 	color: #555;
 	font-size: 3em;
 	position: absolute;
-	top: 0;
+	top: 1rem;
 	right: 2rem;
 }
 span:hover.x-mark {
-	color: #073642;
+	color: #999;
 }
 .page-wrap {
 	/* Open by default */
