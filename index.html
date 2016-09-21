@@ -2,11 +2,12 @@
 <html lang="en">
 	<head>
 		<!-- Meta tags -->
-		<meta charset="utf-8"><!-- Must appear within first 500 bytes of your page -->
+		<meta charset="utf-8"><!-- character set definition should appear within the first 500 bytes of your page -->
 		<meta name="author" content="Eric J. York"><!-- Lists author for search engines -->
 		<meta name="description" content="This page demonstrates a simple responsive gallery with media cards"><!-- Provides description for search engines -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- sets viewport to device width and scale of 1, useful for responsive pages -->
-		<title>Media Gallery</title><!-- Page title required in HTML5 -->
+		<!-- Page title required in HTML5 -->
+		<title>Media Gallery</title>
 		<!-- Stylesheet Loading ~ In Meaningful Sequence ~ -->
 		<link rel="stylesheet" type="text/css" href="bxslider/bxslider.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -21,7 +22,7 @@
 	<body>
 		<main>
 			<nav id="main-navigation" class="navigation">
-				 <a href="#"><span class="x-mark">&#10006</span></a>
+				 <a href="#"><span class="x-mark">&#10006;</span></a>
 				 <h2>Other Galleries</h2>
 				 <ul class="">
 					 <li><a href="#">Gallery One</a></li>
@@ -29,82 +30,83 @@
 					 <li><a href="#">Gallery Three</a></li>
 				 </ul>
 			</nav>
-			<header class="hero">
-				<div class="icon-wrap">
-					<a href="#main-navigation"><span class="hamburger">&#9776;</a>
-				</div>
-				<div class="branding">
-					<h1>Title of the Gallery Page</h1>
-					<p>Some tagline text to give a little content teaser.</p>
-				</div>
+			<header class="icon-wrap">
+				<a href="#main-navigation"><span class="hamburger">&#9776;</span></a>
 			</header>
-			<section>
+			<section class="hero">
+				<div class="slides-container">
 					<ul class="bxslider">
 						<li><img src="pix/mtn.png" title="Mt. Katahdin from the south, at Ripogenus Dam" alt="mountain" /></li>
 						<li><img src="pix/river.png" title="East Branch of the Penobscot River" alt="river" /></li>
 						<li><img src="pix/gorge.png" title="Ripogenus Gorge from above" alt="gorge" /> </li>
 						<li><img src="pix/pine.png" title="Pine tree hollow" alt="pine" /></li>
 					</ul>
+				</div>
+				<div class="branding">
+					<h1>Title of the Gallery</h1>
+					<p>Some tagline text to give a little content teaser.</p>
+					<p>A second line of text to carry it a bit further.</p>
+				</div>
 			</section>
 			<section>
 				<div id="whitesmoke" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="thistle" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="seashell" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="papayawhip" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="mintcream" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="lightsteelblue" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="lavender" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="lightcyan" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="gainsboro" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="azure" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="aliceblue" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 				<div id="silver" class="panel">
 					<h3>Panel Title</h3>
-					<img src="mdcard.png" />
+					<img src="mdcard.png" alt="placeholder" />
 					<p>Lorem ipsum dolor sit amet misericordium besicardium molor titibit.</p>
 				</div>
 			</section>
