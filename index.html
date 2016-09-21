@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="This page demonstrates a simple responsive gallery with media cards">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Media Gallery</title>
-		<!-- Stylesheet Loading -->
+		<!-- Meta tags -->
+		<meta charset="utf-8"><!-- Must appear within first 500 bytes of your page -->
+		<meta name="author" content="Eric J. York"><!-- Lists author for search engines -->
+		<meta name="description" content="This page demonstrates a simple responsive gallery with media cards"><!-- Provides description for search engines -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- sets viewport to device width and scale of 1, useful for responsive pages -->
+		<title>Media Gallery</title><!-- Page title required in HTML5 -->
+		<!-- Stylesheet Loading ~ In Meaningful Sequence ~ -->
 		<link rel="stylesheet" type="text/css" href="bxslider/bxslider.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<!-- Script Loading ~Meaningful Sequence~ -->
-		<!-- jQuery library via CDN -->
+		<!-- Script Loading ~ In Meaningful Sequence ~ -->
+		<!-- Loads jQuery library via CDN -->
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-		<!-- bxSlider Javascript file -->
+		<!-- Calls bxSlider Javascript file -->
 		<script src="bxslider/bxslider.min.js"></script>
-		<!-- bxSlider Function Call -->
+		<!-- Calls bxSlider Function -->
 		<script src="bxslider/slider.js"></script>
 	</head>
 	<body>
 		<main>
+			<nav id="main-navigation" class="navigation">
+				 <a href="#"><span class="x-mark">&#10006</span></a>
+				 <h2>Other Galleries</h2>
+				 <ul class="">
+					 <li><a href="#">Gallery One</a></li>
+					 <li><a href="#">Gallery Two</a></li>
+					 <li><a href="#">Gallery Three</a></li>
+				 </ul>
+			</nav>
 			<header class="hero">
-				<h1>Title of the Gallery Page</h1>
-				<p>Some tagline text to give a little content teaser.</p>
+				<div class="icon-wrap">
+					<a href="#main-navigation"><span class="hamburger">&#9776;</a>
+				</div>
+				<div class="branding">
+					<h1>Title of the Gallery Page</h1>
+					<p>Some tagline text to give a little content teaser.</p>
+				</div>
 			</header>
 			<section>
 					<ul class="bxslider">
