@@ -15,7 +15,7 @@ html {
 	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
 }
 .panel, footer {
-	margin: 0 -3px; /*-- corrects spacing bug --*/
+	margin: 0 -2px; /*-- corrects spacing bug --*/
 }
 h1, h2, h3, h4, h5, h6, p { /*-- zeros the margin and paddings on all text elements --*/
 	margin: 0;
@@ -126,18 +126,19 @@ footer p {
 }
 
 /*-- Sets Panel Backgrounds by ID --*/
-#red {background-color: red;}
-#yellow {background-color: yellow;}
-#orange {background-color: orange;}
-#gold {background-color: gold;}
-#teal {background-color: teal;}
-#green {background-color: green;}
-#aqua {background-color: aqua;}
-#blue {background-color: blue;}
-#lavender {background-color: lavender;}
-#lightsteelblue {background-color: lightsteelblue;}
-#lightcoral {background-color: lightcoral;}
-#lightsalmon {background-color: lightsalmon;}
+#whitesmoke{background: whitesmoke;}
+#thistle {background: thistle;}
+#silver {background: silver;}
+#seashell {background: seashell;}
+#papayawhip {background: papayawhip;}
+#mintcream {background: mintcream;}
+#lightsteelblue {background: lightsteelblue;}
+#lightgray {background: lightgray;}
+#lightcyan {background: lightcyan;}
+#lavender {background: lavender;}
+#gainsboro {background: gainsboro;}
+#azure {background: azure;}
+#aliceblue {background: aliceblue;}
 
 /*-- Sets Media Queries --*/
 @media screen and (min-width: 478px) {/*-- specifies panel properties for screens LARGER than 480px --*/
