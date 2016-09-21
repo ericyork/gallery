@@ -68,7 +68,7 @@ ul.bxslider { /*-- corrects image position --*/
   position: fixed;
   top: 0;
   right: 0;
-  height: 35%;
+  height: 35%; /*-- sets the nav panel height --*/
 	transition: width .4s ease;
 	background-color: #FFF;
 	z-index: 10000;
