@@ -9,8 +9,12 @@ body {
 	margin: 0 auto; /*-- sets top margin to 0 and left and right to auto --*/
 }
 html { /*-- sets root font size (rem) for smallest screen sizes --*/
-	font-size: 14px;
+	font-size: 10px;
 }
+h1 {font-size: 4rem; margin: 1rem auto 1.5rem;}
+h2 {font-size: 3rem; margin: 1rem auto 1.5rem;}
+h3 {font-size: 2rem; margin: 1rem auto 1rem;}
+h4 {font-size: 1.25rem; margin: 1rem auto 1rem;}
 .panel {
 	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
 }
@@ -37,7 +41,7 @@ a { /*-- removes underlines from all links --*/
 .hero {
 	display: flex;
 	flex-flow: column;
-	padding: 5rem 2rem 0 2rem;
+	padding: 5em 2em 0 2em;
 	background-color: lightsteelblue;
 }
 .slides-container {
@@ -153,15 +157,15 @@ footer p {
 
 /*-- Sets Media Queries --*/
 @media screen and (min-width: 478px) {/*-- specifies panel properties for screens LARGER than 480px --*/
-	html {font-size: 15px;}
+	html {font-size: 12px;}
 	.panel {width: 50%;}
 }
 @media screen and (min-width: 768px) {/*-- specifies panel properties for screens LARGER than 768px --*/
-	html {font-size: 16px;}
+	html {font-size: 14px;}
 	.panel {width: 33.33%;}
 }
 @media screen and (min-width: 1024px) {/*-- specifies panel properties for screens LARGER than 1024px --*/
-	html {font-size: 17px;}
+	html {font-size: 16px;}
 	.branding {width: 30%;}
 	.hero {flex-flow: row wrap;}
 	.panel {width: 25%;}
