@@ -20,6 +20,7 @@ p, ul {font-size: 1.4rem; margin: 1rem auto 1rem;}
 /*-- Panel Styles --*/
 .grid {
 	margin-left: 0.4%; /*-- corrects weird spacing bug with below --*/
+	font-family: 'Roboto Condensed';
 }
 .panel {
 	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
@@ -34,7 +35,6 @@ a { /*-- removes underlines from all links --*/
 	display: inline-block;/*-- allows panels to flow with content --*/
 	width: 100%; /*-- sets default width of panels for small screens --*/
 	padding: 20px 10px; /*-- sets padding inside panels --*/
-	border: 3px solid #555;
 }
 .panel img {/*-- makes panel images scale with their containers --*/
 	width: 100%;
@@ -45,15 +45,18 @@ a { /*-- removes underlines from all links --*/
 .hero {
 	display: flex;
 	flex-flow: column-reverse;
-	padding: 5em 2em 0 2em;
-	background: #999;
-	border: 3px solid #555;
+	padding: 5em 0 2em 2em;
+	font-family: 'Raleway';
 }
 .slides-container {
-	flex-grow: 3;
+	flex-grow: 2;
 }
 .branding {
-	padding-left: 2rem;
+	padding-left: 0rem;
+	padding-right: 2rem;
+	background: #FFF;
+	margin-right: .5em;
+	margin-left: -1.5em;
 }
 /*-- Hero Text Styles --*/
 .hero h1 {
@@ -66,7 +69,7 @@ a { /*-- removes underlines from all links --*/
 
 /*-- BxSlider Style Corrections --*/
 .bx-wrapper .bx-viewport {
-	left: 0;
+	left: -30px;
 	background: rgba(255,255,255,0);
 	border-color: rgba(255,255,255,0);
 	box-shadow: none;
@@ -78,6 +81,12 @@ ul.bxslider { /*-- corrects image position --*/
 	margin-bottom: 15px;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+a.bx-prev {
+	margin-left: -15px;
+}
+a.bx-next {
+	margin-right: 30px;
 }
 
 /*-- Navigation Panel Styles --*/
@@ -116,7 +125,7 @@ ul.bxslider { /*-- corrects image position --*/
 	position: fixed;
 	z-index: 9999;
 	top: 1rem;
-	right: 3rem;
+	right: 1.25rem;
 }
 span.hamburger { /*-- sets nav icon apperance --*/
 	background: rgba(255,255,255,0.8);
@@ -135,7 +144,7 @@ span.x-mark { /*-- sets close icon apperance and position --*/
 	font-size: 3em;
 	position: absolute;
 	top: 1rem;
-	right: 3rem;
+	right: 1.25rem;
 	padding: 0 .7rem;
 }
 span:hover.x-mark { /*-- sets close icon color on hover --*/
@@ -148,7 +157,7 @@ footer p {
 	padding: 16px 0px;
 }
 
-/*-- Sets Panel Backgrounds by ID --*/
+/*-- Sets Panel Backgrounds by ID
 #whitesmoke{background: whitesmoke;}
 #thistle {background: thistle;}
 #silver {background: silver;}
@@ -162,6 +171,7 @@ footer p {
 #gainsboro {background: gainsboro;}
 #azure {background: azure;}
 #aliceblue {background: aliceblue;}
+--*/
 
 /*-- Sets Media Queries --*/
 @media screen and (min-width: 478px) {/*-- specifies panel properties for screens LARGER than 480px --*/
@@ -176,8 +186,8 @@ footer p {
 }
 @media screen and (min-width: 1024px) {/*-- specifies panel properties for screens LARGER than 1024px --*/
 	html {font-size: 15px;}
-	.branding {width: 32%;}
 	.hero {flex-flow: row wrap;}
+	.branding {width: 32%; margin-left: 1em;}
 	.panel {width: 25%;}
 	#main-navigation:target {width: 28%;}
 }
