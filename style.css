@@ -5,27 +5,31 @@ html, body, div {/*-- zeros the margins and padding on containers --*/
 }
 body {
 	display: block;/*-- allows margin:auto to function --*/
-	width: 90%; /*-- supplies 5% margin on either side --*/
+	width: 94%; /*-- supplies 3% margin on either side --*/
 	margin: 0 auto; /*-- sets top margin to 0 and left and right to auto --*/
 }
-html {
-	font-size: 17px;
+html { /*-- sets root font size (rem) for smallest screen sizes --*/
+	font-size: 12px;
+}
+h1 {font-size: 4rem; margin: 1rem auto 1.5rem;}
+h2 {font-size: 3rem; margin: 1rem auto 1.5rem;}
+h3 {font-size: 2rem; margin: 1rem auto 1rem;}
+h4 {font-size: 1.6rem; margin: 1rem auto 1rem;}
+p, ul {font-size: 1.6rem; margin: 1rem auto 1rem;}
+
+/*-- Panel Styles --*/
+.grid {
+	margin-left: 0.4%;
 }
 .panel {
 	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
 }
 .panel, footer {
-	margin: 0 -2px; /*-- corrects spacing bug --*/
+	margin: 0 -5px 0 0; /*-- corrects spacing bug --*/
 }
-h1, h2, h3, h4, h5, h6, p { /*-- zeros the margin and paddings on all text elements --*/
-	margin: 0;
-	padding: 0;
-}
-a {
+a { /*-- removes underlines from all links --*/
 	text-decoration: none;
 }
-
-/*-- Panel Styles --*/
 .panel {
 	display: inline-block;/*-- allows panels to flow with content --*/
 	width: 100%; /*-- sets default width of panels for small screens --*/
@@ -37,18 +41,35 @@ a {
 	height: auto;
 }
 
-/*-- Hero Box Styles --*/
+/*-- Floated Slider Styles (for smallest screens) --*/
 .hero {
-	padding: 5% 0px 3% 0px; /*-- sets padding in hero container --*/
+	display: flex;
+	flex-flow: column-reverse;
+	padding: 5em 2em 0 2em;
+	background: #999;
+	border: 3px solid #555;
 }
+.slides-container {
+	flex-grow: 3;
+}
+.branding {
+	padding-left: 2rem;
+}
+/*-- Hero Text Styles --*/
 .hero h1 {
-	font-size: 26px; /*-- sets hero title font size for small screens --*/
+	font-size: 3rem; /*-- sets hero title font size for small screens --*/
 }
 .hero p {
-	font-size: 18px; /*-- sets hero paragraph font size for small screens --*/
+	font-size: 2em;
 }
 
 /*-- BxSlider Style Corrections --*/
+.bx-wrapper .bx-viewport {
+	left: 0;
+	background: rgba(255,255,255,0);
+	border-color: rgba(255,255,255,0);
+	box-shadow: none;
+}
 ul.bxslider { /*-- corrects image position --*/
 	margin-left: -35px;
 }
@@ -68,16 +89,15 @@ ul.bxslider { /*-- corrects image position --*/
   position: fixed;
   top: 0;
   right: 0;
-  height: 35%; /*-- sets the nav panel height --*/
+  height: 50%; /*-- sets the nav panel height --*/
 	transition: width .4s ease;
-	background-color: #FFF;
+	background-color: #EAEAEA;
 	z-index: 10000;
-	box-shadow:inset 0px 0px 0px 10px #999;
+	box-shadow: inset 5px 5px 0 #999, inset 0px -5px 0 #999;
 }
-.navigation h2 {/*-- positions the nav h2 element --*/
+.navigation h3 {/*-- positions the nav h3 element --*/
 	padding-top: 2rem;
 	padding-left: 2rem;
-	padding-bottom: 1rem;
 }
 .navigation ul { /*-- removes bullets from list items --*/
 	list-style-type: none;
@@ -94,7 +114,7 @@ ul.bxslider { /*-- corrects image position --*/
 	position: fixed;
 	z-index: 9999;
 	top: 1rem;
-	right: 2rem;
+	right: 5rem;
 }
 span.hamburger { /*-- sets nav icon apperance --*/
 	background: rgba(255,255,255,0.8);
@@ -113,7 +133,8 @@ span.x-mark { /*-- sets close icon apperance and position --*/
 	font-size: 3em;
 	position: absolute;
 	top: 1rem;
-	right: 2rem;
+	right: 5rem;
+	padding: 0 .7rem;
 }
 span:hover.x-mark { /*-- sets close icon color on hover --*/
 	color: #999;
@@ -142,16 +163,20 @@ footer p {
 
 /*-- Sets Media Queries --*/
 @media screen and (min-width: 478px) {/*-- specifies panel properties for screens LARGER than 480px --*/
+	html {font-size: 13px;}
 	.panel {width: 50%;}
-	.hero h1 {font-size: 32px;}
-	.hero p {font-size: 24px;}
 }
 @media screen and (min-width: 768px) {/*-- specifies panel properties for screens LARGER than 768px --*/
+	html {font-size: 14px;}
 	.panel {width: 33.33%;}
-	.hero h1 {font-size: 40px;}
-	.hero p {font-size: 32px;}
 }
 @media screen and (min-width: 1024px) {/*-- specifies panel properties for screens LARGER than 1024px --*/
+	html {font-size: 15px;}
+	.branding {width: 32%;}
+	.hero {flex-flow: row wrap;}
 	.panel {width: 25%;}
-	.hero h1 {font-size: 48px;}
+}
+@media screen and (min-width: 1440px) {/*-- specifies panel properties for screens LARGER than 1440px --*/
+	html {font-size: 16px;}
+	.panel {width: 16.66%;}
 }
