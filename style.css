@@ -21,6 +21,8 @@ p, ul {font-size: 1.4rem; margin: 1rem auto 1rem;}
 .grid {
 	margin-left: 0.4%; /*-- corrects weird spacing bug with below --*/
 	font-family: 'Roboto Condensed';
+	border-top: 4px dashed #999;
+	border-bottom: 4px dashed #999;
 }
 .panel {
 	box-sizing: border-box; /*-- border-box means borders are internal, etc. --*/
@@ -40,7 +42,9 @@ a { /*-- removes underlines from all links --*/
 	width: 100%;
 	height: auto;
 }
-
+.panel p {
+	font-size: 1rem;
+}
 /*-- Floated Slider Styles (for smallest screens) --*/
 .hero {
 	display: flex;
