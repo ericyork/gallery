@@ -53,9 +53,10 @@ a { /*-- removes underlines from all links --*/
 	font-family: 'Raleway';
 }
 .slides-container {
-	flex-grow: 2;
+	flex-grow: 15;
 }
 .branding {
+	flex-grow: 1;
 	padding-left: 0rem;
 	padding-right: 2rem;
 	background: #FFF;
